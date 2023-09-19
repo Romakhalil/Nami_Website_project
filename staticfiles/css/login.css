@@ -1,0 +1,113 @@
+ body {
+    background-image: linear-gradient(to right, rgb(214, 194, 214), pink); /* Adjust the gradient colors */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: flex-end; 
+     align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+    background-position: left;
+ }
+
+/* Style for the login form */
+.login-form {
+    width: 500px; /* Increased the width of the login form */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+/* Style for the smaller circular logo */
+.logo-small {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.logo-small img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style for the welcome message */
+.welcome-message {
+    margin-bottom: 20px;
+}
+
+.welcome-message h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+/* Style for the login form fields */
+.form-fields {
+    width: 100%;
+    text-align: left;
+}
+
+.input-field {
+    margin: 15px 0;
+}
+
+/* .input-field input {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+} */
+.input-field input {
+    width: 100%;
+    max-width: 90%; /* Add this line to limit the width to 100% of the parent container */
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.button-container {
+    margin-top: 20px;
+}
+
+form button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+.login-form p {
+    margin-top: 10px;
+}
+
+
+
+.left-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px; /* Adjust the width as needed */
+    height: 100%; /* Make the image cover the entire height of the login form */
+    background-image: url("{% static 'images/company.png' %}"); /* Path to your image */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
